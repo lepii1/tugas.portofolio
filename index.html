@@ -5,57 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Lengkap - Lepii</title>
     <style>
-        body {
-            background-color: ;
-            font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-        img, video {
-            max-width: 100%;
-            height: auto;
-        }
-        header, section {
-            margin-bottom: 40px;
-        }
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .cv-container {
+      width: 800px;
+      margin: auto;
+      background-color: #fff;
+      display: flex;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .left-panel {
+      width: 50%;
+      background-color: #e9e9e9;
+      padding: 20px;
+      position: relative;
+    }
+
+    .left-panel img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .section-title {
+      background-color: #bcbcbc;
+      color: white;
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .right-panel {
+      width: 65%;
+      padding: 30px 20px;
+    }
+
+    .bawah{
+      background-color: white;
+      padding: 8px ;
+    }    
     </style>
 </head>
 <body>
     <header>
-        <h1>Portofolio Lengkap - Lepi</h1>
+        <center><h1>Portofolio Lengkap - Lepi</h1></center>
     </header>
-
-    <section>
-        <h2>Profil Saya</h2>
-        <img width="250" src="asset/myfoto.jpg" alt="Foto Profil Lepi">
+    <div class="cv-container">
+    <div class="left-panel">
+        <img height="" width="100" src="asset/myfoto.jpg" alt="Foto Profil Lepi">
+        <div class="section-title">Profil Saya</div>
         <p>Perkenalkan nama saya Ahmad Aulia Fahlevi, Sekarang saya belajar di Politeknik Negeri Lhokseumawe 
             di Jurusan TIK(Teknik Informasi dan Komputer) di prodi TI(Teknik Informatika) di kelas TI-1C, hobi saya olahraga 
             dan saya juga atlit Taekwondo Profesional dan juga saya suka sepedaan, Cita-cita saya untuk saat ini belum ada 
             yang pasti hal yang pertama saya ingin lakukan adalah membahagiakan orang tua saya, Terima Kasih.</p>
-
+          </div>
+          <div class="right-panel">
         <h3>Audio Perkenalan</h3>
-        <audio controls autoplay>
+        <br>
+        <audio controls >
             <source src="asset/Catalyst Weird Genius .mp3" type="audio/mp3">
             Browser Anda tidak mendukung pemutaran audio.
         </audio>
-    </section>
 
-    <section>
-        <h2>Proyek Terbaru</h2>
+        <h2>Video</h2>
         <video controls poster="asset/Screenshot 2025-04-19 132248.jpg" width="300">
             <source src="asset/jedag jedug.mp4" type="video/mp4">
             Browser Anda tidak mendukung pemutaran video.
         </video>   
-    </section>
-
-    <section>
+      </div>
+    </div>
+    <div class="bawah">
+    <center>
         <h2>Video YouTube</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DOfczNu3n1Y?si=9RKN4_DRAvmy3khr" title="Video Proyek di YouTube" frameborder="0" allowfullscreen></iframe>
-    </section>
-
+      </center>
+      <br>
     <footer>
         <p>© 2025 Levi - Kontak: aauliafahlefi@gmail.com</p>
     </footer>
+  </div>
+
+
 </body>
 </html>
